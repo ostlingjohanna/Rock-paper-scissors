@@ -1,0 +1,19 @@
+body {
+    background-color: lightgray;
+    text-align: center;
+    padding-top: 40px;
+
+}
+h1{
+ background-color: darkviolet;
+ color: aliceblue;
+ width: fit-content;
+ margin: 20px auto;
+ 
+}
+#startoverbtn{
+    font-style: italic;
+    background-color: darkviolet;
+    color: whitesmoke
+    
+}
