@@ -11,7 +11,7 @@ namnbtn.addEventListener("click", (event) => {
   console.log("namnet");  
 });
 
-const array = ["sten", "sax", "papper"];
+const array = ["Rock", "Scissor", "Paper"];
 const datornsval = document.querySelector("#datornsvapen");
 const scores = document.querySelector("#scores");
 
@@ -23,11 +23,11 @@ console.log(datornspoäng, spealrespoäng);
 const stenbtn = document.querySelector("#stenbtn");
 stenbtn.addEventListener("click", (event) => {
   const valtvapen = document.querySelector("#valtvapen");
-  valtvapen.innerText = "du: sten";
+  valtvapen.innerText = "You chose: Rock";
 
   let datorval = Math.floor(Math.random() * array.length);
   console.log(array[datorval]);
-  datornsval.innerText = "datorn: " + array[datorval];
+  datornsval.innerText = "Computer chose: " + array[datorval];
 
   if (datorval == 0) {
     console.log("oavgjort");
@@ -42,7 +42,7 @@ stenbtn.addEventListener("click", (event) => {
   }
 
   scores.innerText =
-    "dina poäng: " + spealrespoäng + " datorns poäng: " + datornspoäng;
+    "Your points: " + spealrespoäng +" Computers points: " + datornspoäng;
   checkWinner();
 });
 
@@ -50,11 +50,11 @@ stenbtn.addEventListener("click", (event) => {
 const saxbtn = document.querySelector("#saxbtn");
 saxbtn.addEventListener("click", (event) => {
   const valtvapen = document.querySelector("#valtvapen");
-  valtvapen.innerText = "du: sax";
+  valtvapen.innerText = "You chose: Scissor";
 
   let datorval = Math.floor(Math.random() * array.length);
   console.log(array[datorval]);
-  datornsval.innerText = "datorn: " + array[datorval];
+  datornsval.innerText = "Computer chose: " + array[datorval];
 
   if (datorval == 0) {
     console.log("datorn får poäng");
@@ -68,7 +68,7 @@ saxbtn.addEventListener("click", (event) => {
     console.log(datornspoäng, spealrespoäng);
   }
   scores.innerText =
-    "dina poäng: " + spealrespoäng + " datorns poäng: " + datornspoäng;
+  "Your points: " + spealrespoäng + " Computers points: " + datornspoäng;
   checkWinner();
 });
 
@@ -76,11 +76,11 @@ saxbtn.addEventListener("click", (event) => {
 const papperbtn = document.querySelector("#papperbtn");
 papperbtn.addEventListener("click", (event) => {
   const valtvapen = document.querySelector("#valtvapen");
-  valtvapen.innerText = "du: papper";
+  valtvapen.innerText = "You chose: Paper";
 
   let datorval = Math.floor(Math.random() * array.length);
   console.log(array[datorval]);
-  datornsval.innerText = "datorn: " + array[datorval];
+  datornsval.innerText = "Computer chose: " + array[datorval];
 
   if (datorval == 0) {
     console.log("spelare får poäng");
@@ -94,7 +94,7 @@ papperbtn.addEventListener("click", (event) => {
     console.log("oavgjort");
   }
   scores.innerText =
-    "dina poäng: " + spealrespoäng + " datorns poäng: " + datornspoäng;
+  "Your points: " + spealrespoäng + " Computers points: " + datornspoäng;
   checkWinner();
 });
 
@@ -106,10 +106,10 @@ function checkWinner() {
   
 
   if (spealrespoäng == 3){
-  vinnareEl.innerText = "Vinnare: " + text}
+  vinnareEl.innerText = "Winner: " + text}
 
 
   else if (datornspoäng == 3){
-     vinnareEl.innerText = "Vinnare: datorn";}
+     vinnareEl.innerText = "Winner: computer";}
 
 }
