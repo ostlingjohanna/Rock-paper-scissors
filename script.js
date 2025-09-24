@@ -17,17 +17,17 @@ const scores = document.querySelector("#scores");
 
 let datornspoäng = 0;
 let spealrespoäng = 0;
-console.log(datornspoäng, spealrespoäng);
+
 
 //spelaren väljer sten
 const stenbtn = document.querySelector("#stenbtn");
 stenbtn.addEventListener("click", (event) => {
   const valtvapen = document.querySelector("#valtvapen");
-  valtvapen.innerText = "You chose: Rock";
+  valtvapen.innerText = "You choose: Rock";
 
   let datorval = Math.floor(Math.random() * array.length);
   console.log(array[datorval]);
-  datornsval.innerText = "Computer chose: " + array[datorval];
+  datornsval.innerText = "Computer choose: " + array[datorval];
 
   if (datorval == 0) {
     console.log("oavgjort");
@@ -50,11 +50,11 @@ stenbtn.addEventListener("click", (event) => {
 const saxbtn = document.querySelector("#saxbtn");
 saxbtn.addEventListener("click", (event) => {
   const valtvapen = document.querySelector("#valtvapen");
-  valtvapen.innerText = "You chose: Scissor";
+  valtvapen.innerText = "You choose: Scissor";
 
   let datorval = Math.floor(Math.random() * array.length);
   console.log(array[datorval]);
-  datornsval.innerText = "Computer chose: " + array[datorval];
+  datornsval.innerText = "Computer choose: " + array[datorval];
 
   if (datorval == 0) {
     console.log("datorn får poäng");
@@ -76,11 +76,11 @@ saxbtn.addEventListener("click", (event) => {
 const papperbtn = document.querySelector("#papperbtn");
 papperbtn.addEventListener("click", (event) => {
   const valtvapen = document.querySelector("#valtvapen");
-  valtvapen.innerText = "You chose: Paper";
+  valtvapen.innerText = "You choose: Paper";
 
   let datorval = Math.floor(Math.random() * array.length);
   console.log(array[datorval]);
-  datornsval.innerText = "Computer chose: " + array[datorval];
+  datornsval.innerText = "Computer choose: " + array[datorval];
 
   if (datorval == 0) {
     console.log("spelare får poäng");
@@ -101,7 +101,6 @@ papperbtn.addEventListener("click", (event) => {
 //Meddela vinnaren
 
 function checkWinner() {
-  console.log(datornspoäng, spealrespoäng + " inne i function");
   const vinnareEl = document.querySelector('#vinnare')
   
 
